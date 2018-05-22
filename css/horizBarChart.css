@@ -1,0 +1,247 @@
+h1.top_heroes {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid rgba(240,237,242,.2);
+    color: rgb(240, 237, 242);
+    margin-bottom: 50px;
+    font-family: "Big Noodle Too", impact, sans-serif;
+    font-size: 70px;
+}
+
+.chart { 
+	zoom: 1;
+    width: 50%;
+    /* background: #404040; */
+    margin: auto;
+    /* box-sizing: border-box; */
+}
+
+.chart:after {
+	clear:both;
+	content:'.';
+	display:block;
+	height:0;
+	visibility:hidden
+}
+
+.chart li {
+    display: block;
+    /* height: 100%; */
+    /* margin-top: 3px; */
+    position: relative;
+    width: 100%;
+    /* box-sizing: border-box; */
+    /* overflow: hidden; */
+    background: #333;
+}
+
+.chart li:before {
+	color:#fff;
+	content:attr(title);
+	left:5px;
+	position:absolute
+}
+
+.chart li.title:before {
+	color:black;
+	font-weight:bold;
+	left:0
+}
+
+.chart li:first-child {
+	margin-top:0
+}
+
+.chart li .bar {
+	background:black;
+	height:100%;
+	position: absolute;
+
+	border-style: solid;
+    border-radius: 10px;
+}
+
+.chart li .number {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    /* padding-left: 5px; */
+    position: absolute;
+    top: 13px;
+    /* vertical-align: middle; */
+    left: 10px!important;
+}
+
+.chart li .playtime {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    /* padding-left: 5px; */
+    position: absolute;
+    top: 13px;
+    /* vertical-align: middle; */
+    right: 10px!important;
+    /* float: right; */
+    /* text-align: right; */
+}
+
+.chart li.past .bar {
+	background:#aaa
+}
+
+.chart li.past .number {
+	color:#aaa
+}
+
+ul .bar_container {
+    height: 5rem;
+    /* width: 100%; */
+    /* box-sizing: border-box; */
+    display: flex;
+    margin-bottom: 5px;
+}
+
+img.hero_icon {
+    /* display: block; */
+    /* float: left; */
+    height: 5rem;
+    /* width: auto; */
+    margin-right: .2rem;
+    border: .2rem solid #a1a1a1;
+    border-radius: .4rem;
+    /* position: absolute; */
+}
+
+.bar_text {
+
+}
+
+/* hero colours */
+.hanzo {
+	background: rgb(147, 136, 72)!important;
+}
+
+.roadhog {
+	background: rgb(193, 148, 119)!important;
+}
+
+.ana {
+	background: rgb(204, 194, 174)!important;
+}
+
+.soldier76 {
+	background: rgb(88, 112, 182)!important;
+}
+
+.widowmaker {
+	background: rgb(111, 111, 174)!important;
+}
+
+.zarya {
+	background: rgb(245, 113, 168)!important;
+}
+
+.mccree {
+	background: rgb(141, 57, 57)!important;
+}
+
+.reinhardt {
+	background: rgb(170, 149, 142)!important;
+}
+
+.winston {
+	background: rgb(76, 80, 92)!important;
+}
+
+.genji {
+	background: rgb(132, 254, 1)!important;
+}
+
+.junkrat {
+	background: rgb(211, 147, 8)!important;
+}
+
+.lucio {
+	background: rgb(139, 236, 34)!important;
+}
+
+.symmetra {
+	background: rgb(92, 236, 255)!important;
+}
+
+.tracer {
+	background: rgb(248, 145, 27)!important;
+}
+
+.bastion {
+	background: rgb(110, 153, 77)!important;
+}
+
+.mercy {
+	background: rgb(255, 225, 108)!important;
+}
+
+.mei {
+	background: rgb(154, 219, 244)!important;
+}
+
+.torbjorn {
+	background: rgb(55, 98, 0)!important;
+}
+
+.pharah {
+	background: rgb(27, 101, 198)!important;
+}
+
+.dva {
+	background: rgb(255, 127, 209)!important;
+}
+
+.reaper {
+	background: rgb(39, 39, 37)!important;
+}
+
+.zenyatta {
+	background: rgb(199, 156, 0)!important;
+}
+
+.orisa {
+	background: rgb(220, 154, 0)!important;
+}
+
+.sombra {
+	background: rgb(117, 27, 156)!important;
+}
+
+@media screen and (max-width: 480px) {
+	.chart li {
+		height:auto
+	}
+
+	.chart li:before { 
+		color:black;
+		display:block;
+		left:0;
+		position:relative
+	}
+
+	.chart li.title:before {
+		border-bottom:1px solid
+	}
+
+	.chart li .bar {
+		height: 100%;
+	}
+/*
+	.chart li .number {
+		display:block;
+		left:0 !important;
+		padding-left:0;
+		position:relative;
+		top:-8px
+	}
+*/
+	.playtime {
+		display: none;
+	}
+}
